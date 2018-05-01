@@ -1,0 +1,42 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.container{
+  height: 80%;
+  width: 80%;
+  background: #badaba;
+  display: flex;
+  justify-items: flex-start;
+}
+.grid1, .grid2 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 0.5fr;
+  grid-gap: 10px;
+}
+.grid1{
+  width: 21%;
+  margin-right: 7%;
+  grid-template-columns: 1fr;
+  & .item{
+    background: #dabada;
+  }
+}
+
+.grid2{
+  width: 72%;
+  grid-template-columns: repeat(3, 1fr);
+  & .item{
+    background: #6bc2da;
+
+  }
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+}
